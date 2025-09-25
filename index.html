@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Yaël Betton</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">YB</a>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">À propos de moi</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Compétences</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projets</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Presentation Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="line">Yaël</span>
+                    <span class="line">Betton</span>
+                </h1>
+                <p class="hero-subtitle">Développeur / Concepteur d'applications</p>
+                <div class="hero-description">
+                    <p>Etudiant en seconde année à l'IUT du Limousin</p>
+                    <p>Je suis en recherche d'un stage d'une durée de dix semaines</p>
+                </div>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn-primary">Voir mes projets</a>
+                    <a href="#contact" class="btn-secondary">Me contacter</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-circle">
+                        <img src="Photo_Cv.png" alt="Photo CV" class="profile-pic">
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">À propos de moi</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-intro">
+                        Étudiant en deuxième année de BUT Informatique à l'IUT de Limoges,
+                        je suis passionné par le développement d'applications et la programmation.
+                    </p>
+                    <p>
+                        Au fil de mes projets académiques et personnels, j'ai acquis des compétences en Python, Java, PHP, SQL, React Native, JavaScript, HTML/CSS,
+                         que j'ai mises en pratique à travers des réalisations variées, comme la création d'un jeu en Java/JavaFX ou d'une application mobile en 
+                         React Native permettant de scanner des codes-barres 
+                         et d'afficher des informations produits.
+                    </p>
+                    <p>
+                        J'aime concevoir des solutions qui allient clarté, efficacité et qualité de code, tout en restant attentif aux besoins des utilisateurs. 
+                        Mon objectif est de continuer à apprendre et à contribuer à des projets concrets, aussi bien dans un cadre académique que professionnel.
+                    </p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat">
+                        <div class="stat-number">15+</div>
+                        <div class="stat-label">Projets réalisés</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">2+</div>
+                        <div class="stat-label">Années d'expérience</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">10+</div>
+                        <div class="stat-label">Langages maitrisés</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Compétences</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <ul class="skill-list">
+                        <li>JavaScript</li>
+                        <li>React Native</li>
+                        <li>HTML5 / CSS3</li>
+                        <li>TypeScript</li>
+                        <li>Vue.js</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Backend</h3>
+                    <ul class="skill-list">
+                        <li>Node.js</li>
+                        <li>PHP</li>
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>SQL / PostgreSQL</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Outils</h3>
+                    <ul class="skill-list">
+                        <li>Git / GitHub</li>
+                        <li>Docker</li>
+                        <li>VS Code</li>
+                        <li>Figma</li>
+                        <li>Eclipse</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Projets</h2>
+                <div class="section-line"></div> 
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="Latice.jpg" alt="Latice Jeu">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Latice</h3>
+                        <p class="project-description">
+                            Chaque joueur place ses tuiles sur un plateau en les associant par couleur ou symbole à celles déjà posées. Le but est de se débarrasser de toutes ses tuiles le premier,
+                            en utilisant stratégie et anticipation. Des bonus viennent modifier la partie et permettent d'enchaîner des coups ou de bloquer l'adversaire.
+                        </p>
+                        <div class="project-tech">
+                            <span>Java</span>
+                            <span>JavaFX</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/YaelBetton/Latice/tree/main/src" class="project-link">Voir le code</a>
+                            <a href="https://github.com/YaelBetton/Latice/blob/main/README.md" class="project-link">Voir la descrition du projet</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="LogoYuka.png" alt="Logo Yuka">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Yuka Clone</h3>
+                        <p class="project-description">
+                            En scannant le code-barres d'un produit, Yuka fournit une note de qualité basée sur la composition (valeurs nutritionnelles, additifs, ingrédients). 
+                            L'application propose aussi des alternatives plus saines pour aider l'utilisateur à faire de meilleurs choix au quotidien.
+                        </p>
+                        <div class="project-tech">
+                            <span>React Native</span>
+                            <span>TypeScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/YaelBetton/Yuka-android-clone" class="project-link">Voir le code</a>
+                            <a href="https://github.com/YaelBetton/Yuka-android-clone/blob/main/README.md" class="project-link">Voir la description du projet</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="Logo_Legrand.png" alt="LeGrand logo">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">LeGrand</h3>
+                        <p class="project-description">
+                            Développement d'une application visant à simplifier la création de documents pour les employés chargés de l'assemblage et de la mise
+                             en œuvre des outils et produits.
+                        </p>
+                        <div class="project-tech">
+                            <span>Vue.js</span>
+                            <span>Node.js</span>
+                            <span>TypeScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="minijeuImage.jpg" alt="MiniJeu image">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">MiniJeux</h3>
+                        <p class="project-description">
+                        Développement de plusieurs mini-jeux en Python, incluant un jeu de devinettes, un morpion, et le jeu des allumettes 
+                        avec l'ajout de robots de différents niveaux de difficulté.
+                        </p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>JSON</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/YaelBetton/MiniGames/tree/main/MiniGame" class="project-link">Voir le code</a>
+                            <a href="https://github.com/YaelBetton/MiniGames/blob/main/README.md" class="project-link">Voir la description du projet</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contact</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Pour me contacter :</h3>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <span class="contact-label">Email</span>
+                            <a href="mailto:yaelbetton@gmail.com">yaelbetton@gmail.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-label">Localisation</span>
+                            <span>Nouvelle-Aquitaine, France</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/YaelBetton" class="social-link">GitHub</a>
+                        <a href="https://www.linkedin.com/in/yael-betton-a30652383/" class="social-link">LinkedIn</a>
+                    </div>
+                </div>
+                <form class="contact-form" action="contact.php" method="POST">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Votre nom" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Votre email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Sujet" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="6" placeholder="Votre message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Envoyer le message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
