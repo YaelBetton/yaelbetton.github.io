@@ -1,7 +1,23 @@
 <?php
+// Debug temporaire (a desactiver apres correction)
+$debug = true;
+if ($debug) {
+    ini_set('display_errors', '1');
+    ini_set('display_startup_errors', '1');
+    error_reporting(E_ALL);
+    ini_set('log_errors', '1');
+    ini_set('error_log', __DIR__ . '/contact_errors.log');
+    register_shutdown_function(function () {
+        $last_error = error_get_last();
+        if ($last_error) {
+            error_log('Fatal error: ' . $last_error['message'] . ' in ' . $last_error['file'] . ':' . $last_error['line']);
+        }
+    });
+}
 // Configuration
-$recipient_email = "jean.dupont@email.com"; // Remplacez par votre vraie adresse email
+$recipient_email = "yaelbetton@gmail.com";
 $subject_prefix = "[Portfolio] ";
+$sender_email = $recipient_email; // Utilise une adresse du domaine si possible pour la delivrabilite
 
 // Vérification de la méthode POST
 if ($_SERVER["REQUEST_METHOD"] !== "POST") {
@@ -55,8 +71,9 @@ $email_body .= "Sujet: $subject\n\n";
 $email_body .= "Message:\n$message\n";
 
 // Headers de l'email
-$headers = "From: $name <$email>\r\n";
-$headers .= "Reply-To: $email\r\n";
+$headers = "From: Portfolio <$sender_email>\r\n";
+$headers .= "Reply-To: $name <$email>\r\n";
+$headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
 $headers .= "X-Mailer: PHP/" . phpversion();
 
 // Tentative d'envoi de l'email
