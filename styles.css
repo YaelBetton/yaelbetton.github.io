@@ -617,6 +617,32 @@ section {
     border: 1px solid var(--gray-medium);
 }
 
+.contact-message {
+    display: none;
+    margin-bottom: 20px;
+    padding: 12px 16px;
+    border: 1px solid var(--gray-medium);
+    background: var(--primary-white);
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.contact-message.is-visible {
+    display: block;
+}
+
+.contact-message--success {
+    border-color: #1a7f37;
+    color: #1a7f37;
+    background: #f6fef9;
+}
+
+.contact-message--error {
+    border-color: #b42318;
+    color: #b42318;
+    background: #fef3f2;
+}
+
 .form-group {
     margin-bottom: 25px;
 }

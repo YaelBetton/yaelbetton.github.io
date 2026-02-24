@@ -1,12 +1,17 @@
-// Navigation functionality
 document.addEventListener('DOMContentLoaded', function() {
     const urlParams = new URLSearchParams(window.location.search);
     const mailStatus = urlParams.get('mail');
-    if (mailStatus === 'ok') {
-        alert('Message envoye avec succes. Merci pour votre message !');
-        window.history.replaceState({}, document.title, window.location.pathname + window.location.hash);
-    } else if (mailStatus === 'error') {
-        alert('Erreur lors de l\'envoi du message. Verifiez les champs et reessayez.');
+    const contactMessage = document.getElementById('contact-message');
+    if (contactMessage && (mailStatus === 'ok' || mailStatus === 'error')) {
+        contactMessage.classList.add('is-visible');
+        contactMessage.classList.remove('contact-message--success', 'contact-message--error');
+        if (mailStatus === 'ok') {
+            contactMessage.classList.add('contact-message--success');
+            contactMessage.textContent = 'Message envoye avec succes. Merci pour votre message !';
+        } else {
+            contactMessage.classList.add('contact-message--error');
+            contactMessage.textContent = 'Erreur lors de l\'envoi du message. Verifiez les champs et reessayez.';
+        }
         window.history.replaceState({}, document.title, window.location.pathname + window.location.hash);
     }
     const navbar = document.getElementById('navbar');
@@ -14,7 +19,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const navMenu = document.getElementById('nav-menu');
     const navLinks = document.querySelectorAll('.nav-link');
 
-    // Navbar scroll effect
     window.addEventListener('scroll', function() {
         if (window.scrollY > 50) {
             navbar.classList.add('scrolled');
@@ -23,13 +27,11 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Mobile menu toggle
     hamburger.addEventListener('click', function() {
         hamburger.classList.toggle('active');
         navMenu.classList.toggle('active');
     });
 
-    // Close mobile menu when clicking on links
     navLinks.forEach(link => {
         link.addEventListener('click', function() {
             hamburger.classList.remove('active');
@@ -37,7 +39,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Active navigation link based on scroll position
     function updateActiveNavLink() {
         const sections = document.querySelectorAll('section[id]');
         const scrollPosition = window.scrollY + 100;
@@ -59,7 +60,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     window.addEventListener('scroll', updateActiveNavLink);
 
-    // Smooth scrolling for navigation links
     navLinks.forEach(link => {
         link.addEventListener('click', function(e) {
             e.preventDefault();
@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const targetSection = document.getElementById(targetId);
             
             if (targetSection) {
-                const offsetTop = targetSection.offsetTop - 70; // Account for navbar height
+                const offsetTop = targetSection.offsetTop - 70;
                 window.scrollTo({
                     top: offsetTop,
                     behavior: 'smooth'
@@ -76,17 +76,14 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Form submission handling
     const contactForm = document.querySelector('.contact-form');
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
-            // Add loading state
             const submitBtn = this.querySelector('button[type="submit"]');
             const originalText = submitBtn.textContent;
             submitBtn.textContent = 'Envoi en cours...';
             submitBtn.disabled = true;
 
-            // Reset form styling
             setTimeout(() => {
                 submitBtn.textContent = originalText;
                 submitBtn.disabled = false;
@@ -94,7 +91,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Intersection Observer for animations
     const observerOptions = {
         threshold: 0.1,
         rootMargin: '0px 0px -50px 0px'
@@ -109,7 +105,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }, observerOptions);
 
-    // Observe elements for animation
     const animatedElements = document.querySelectorAll('.project-card, .stat, .skill-category');
     animatedElements.forEach(el => {
         el.style.opacity = '0';
@@ -118,7 +113,6 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(el);
     });
 
-    // Parallax effect for hero section
     const hero = document.querySelector('.hero');
     if (hero) {
         window.addEventListener('scroll', function() {
@@ -128,7 +122,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Typing effect for hero subtitle
     function typeWriter(element, text, speed = 100) {
         let i = 0;
         element.textContent = '';
@@ -144,7 +137,6 @@ document.addEventListener('DOMContentLoaded', function() {
         type();
     }
 
-    // Initialize typing effect
     const heroSubtitle = document.querySelector('.hero-subtitle');
     if (heroSubtitle) {
         setTimeout(() => {
@@ -152,7 +144,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 1500);
     }
 
-    // Project cards hover effect
     const projectCards = document.querySelectorAll('.project-card');
     projectCards.forEach(card => {
         card.addEventListener('mouseenter', function() {
@@ -164,7 +155,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Contact form validation
     const formInputs = document.querySelectorAll('.form-group input, .form-group textarea');
     formInputs.forEach(input => {
         input.addEventListener('blur', function() {
@@ -180,13 +170,11 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Scroll progress indicator
     function updateScrollProgress() {
         const scrollTop = window.pageYOffset;
         const docHeight = document.body.scrollHeight - window.innerHeight;
         const scrollPercent = (scrollTop / docHeight) * 100;
         
-        // Create progress bar if it doesn't exist
         let progressBar = document.querySelector('.scroll-progress');
         if (!progressBar) {
             progressBar = document.createElement('div');

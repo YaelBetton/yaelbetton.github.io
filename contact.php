@@ -1,5 +1,4 @@
 <?php
-// Configuration
 $recipient_email = "yaelbetton@gmail.com";
 $subject_prefix = "[Portfolio] ";
 $sender_email = $recipient_email;
