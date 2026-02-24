@@ -1,5 +1,14 @@
 // Navigation functionality
 document.addEventListener('DOMContentLoaded', function() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const mailStatus = urlParams.get('mail');
+    if (mailStatus === 'ok') {
+        alert('Message envoye avec succes. Merci pour votre message !');
+        window.history.replaceState({}, document.title, window.location.pathname + window.location.hash);
+    } else if (mailStatus === 'error') {
+        alert('Erreur lors de l\'envoi du message. Verifiez les champs et reessayez.');
+        window.history.replaceState({}, document.title, window.location.pathname + window.location.hash);
+    }
     const navbar = document.getElementById('navbar');
     const hamburger = document.getElementById('hamburger');
     const navMenu = document.getElementById('nav-menu');
