@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latice - Portfolio Yaël Betton</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../index.html">YB</a>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="../index.html#home" class="nav-link">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#about" class="nav-link">À propos de moi</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#skills" class="nav-link">Langages maîtrisés</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#projects" class="nav-link">Projets</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="project-detail">
+        <div class="container">
+            <div class="project-detail-header">
+                <a href="../index.html#projects" class="back-link">← Retour aux projets</a>
+                <h1 class="project-detail-title">Latice</h1>
+                <div class="project-detail-meta">
+                    <span class="project-tech">Java</span>
+                    <span class="project-tech">JavaFX</span>
+                </div>
+            </div>
+
+            <div class="project-detail-image">
+                <img src="../images/Latice.jpg" alt="Latice Jeu">
+            </div>
+
+            <div class="project-detail-content">
+                <div class="project-detail-section">
+                    <h2>Aperçu du projet</h2>
+                    <p>
+                        Latice est un jeu de plateau stratégique développé en Java avec JavaFX. Chaque joueur dispose d'un ensemble de tuiles 
+                        qu'il doit placer sur le plateau en les associant par couleur ou symbole aux tuiles déjà posées. L'objectif est de se 
+                        débarrasser de toutes ses tuiles en premier, en faisant preuve de stratégie et d'anticipation.
+                    </p>
+                    <p>
+                        Le jeu intègre un système de bonus qui vient enrichir l'expérience de jeu. Ces bonus permettent d'enchaîner des coups 
+                        spectaculaires ou de bloquer les adversaires dans leur progression. La partie devient alors un véritable défi tactique 
+                        où chaque décision compte.
+                    </p>
+                </div>
+
+                <div class="project-detail-section">
+                    <h2>Fonctionnalités principales</h2>
+                    <ul class="feature-list">
+                        <li>Interface graphique développée avec JavaFX pour une expérience utilisateur fluide et moderne</li>
+                        <li>Système de placement de tuiles avec validation automatique des règles du jeu</li>
+                        <li>Gestion des tours de jeu et détection automatique de la victoire</li>
+                        <li>Système de bonus stratégiques pour dynamiser les parties</li>
+                        <li>Mode multijoueur local permettant de jouer à plusieurs sur le même ordinateur</li>
+                        <li>Animations et effets visuels pour améliorer l'immersion</li>
+                    </ul>
+                </div>
+
+                <div class="project-detail-section">
+                    <h2>Technologies utilisées</h2>
+                    <p>
+                        Ce projet a été entièrement développé en <strong>Java</strong>, en utilisant le framework <strong>JavaFX</strong> 
+                        pour créer l'interface graphique. JavaFX offre un ensemble d'outils puissants pour créer des applications modernes 
+                        avec des animations, des transitions et des effets visuels avancés.
+                    </p>
+                    <p>
+                        L'architecture du code suit les principes de la programmation orientée objet, avec une séparation claire entre la 
+                        logique métier et l'interface utilisateur. Cette approche facilite la maintenance et l'évolution du code.
+                    </p>
+                </div>
+
+                <div class="project-detail-section">
+                    <h2>Compétences développées</h2>
+                    <ul class="feature-list">
+                        <li><strong>Développement orienté objet :</strong> Maîtrise de la POO en Java avec encapsulation, héritage et polymorphisme pour structurer un jeu complexe avec plusieurs entités interagissant entre elles</li>
+                        <li><strong>Conception d'interfaces graphiques :</strong> Création d'une UI moderne et intuitive avec JavaFX, gestion des événements utilisateur et mise en place d'animations fluides pour améliorer l'expérience joueur</li>
+                        <li><strong>Architecture logicielle :</strong> Application du pattern MVC pour séparer la logique métier de l'affichage, garantissant un code maintenable et évolutif</li>
+                        <li><strong>Gestion de la complexité :</strong> Implémentation d'algorithmes de validation de coups respectant les règles du jeu, avec gestion des cas limites et optimisation des performances</li>
+                        <li><strong>Tests et débogage :</strong> Développement d'une méthodologie rigoureuse de tests pour garantir la fiabilité de la logique de jeu et corriger les bugs d'affichage</li>
+                    </ul>
+                </div>
+
+                <div class="project-detail-section">
+                    <h2>Défis rencontrés</h2>
+                    <p>
+                        Le principal défi de ce projet résidait dans l'implémentation de la logique de validation des coups. Il fallait 
+                        vérifier en temps réel si une tuile pouvait être placée à un emplacement donné, en tenant compte des règles complexes 
+                        du jeu concernant les couleurs et les symboles.
+                    </p>
+                    <p>
+                        Un autre aspect important était la gestion de l'interface graphique avec JavaFX. Il a fallu créer une représentation 
+                        visuelle du plateau qui soit à la fois claire et esthétique, tout en restant performante même avec un grand nombre 
+                        de tuiles affichées simultanément.
+                    </p>
+                </div>
+
+                <div class="project-detail-section">
+                    <h2>Apprentissages</h2>
+                    <p>
+                        Ce projet m'a permis d'approfondir mes compétences en développement Java et en conception d'interfaces graphiques 
+                        avec JavaFX. J'ai notamment acquis une meilleure compréhension des patterns de conception orientés objet et de 
+                        l'architecture MVC (Modèle-Vue-Contrôleur).
+                    </p>
+                    <p>
+                        La gestion des événements utilisateur, l'optimisation des performances graphiques et la création d'une expérience 
+                        utilisateur fluide ont été des aspects particulièrement enrichissants de ce développement.
+                    </p>
+                </div>
+
+                <div class="project-detail-links">
+                    <a href="https://github.com/YaelBetton/Latice/tree/main/src" class="btn-primary" target="_blank" rel="noopener noreferrer">
+                        Voir le code source
+                    </a>
+                    <a href="https://github.com/YaelBetton/Latice/blob/main/README.md" class="btn-secondary" target="_blank" rel="noopener noreferrer">
+                        Documentation complète
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

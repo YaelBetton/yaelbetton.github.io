@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeGrand - Portfolio Yaël Betton</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../index.html">YB</a>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="../index.html#home" class="nav-link">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#about" class="nav-link">À propos de moi</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#skills" class="nav-link">Langages maîtrisés</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#projects" class="nav-link">Projets</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="project-detail">
+        <div class="container">
+            <div class="project-detail-header">
+                <a href="../index.html#projects" class="back-link">← Retour aux projets</a>
+                <h1 class="project-detail-title">LeGrand</h1>
+                <div class="project-detail-meta">
+                    <span class="project-tech">Vue.js</span>
+                    <span class="project-tech">Node.js</span>
+                    <span class="project-tech">TypeScript</span>
+                </div>
+            </div>
+
+            <div class="project-detail-image">
+                <img src="../images/Logo_Legrand.png" alt="LeGrand logo">
+            </div>
+
+            <div class="project-detail-content">
+                <div class="project-detail-section">
+                    <h2>Aperçu du projet</h2>
+                    <p>
+                        LeGrand est une application web développée pour simplifier et automatiser la création de documents techniques 
+                        destinés aux employés chargés de l'assemblage et de la mise en œuvre d'outils et produits industriels. Cette 
+                        solution vise à améliorer l'efficacité opérationnelle et à réduire les erreurs dans la production de documentation.
+                    </p>
+                    <p>
+                        L'application propose une interface intuitive permettant aux utilisateurs de générer rapidement des documents 
+                        standardisés en remplissant des formulaires structurés. Les documents sont ensuite formatés automatiquement 
+                        selon les normes de l'entreprise, ce qui garantit une cohérence et une qualité professionnelle.
+                    </p>
+                </div>
+
+                <div class="project-detail-section">
+                    <h2>Fonctionnalités principales</h2>
+                    <ul class="feature-list">
+                        <li>Générateur de documents techniques avec templates personnalisables selon les besoins</li>
+                        <li>Interface utilisateur moderne et responsive développée avec Vue.js</li>
+                        <li>Système de formulaires dynamiques s'adaptant au type de produit sélectionné</li>
+                        <li>Export des documents dans différents formats (PDF, Word, etc.)</li>
+                        <li>Gestion des utilisateurs avec différents niveaux d'accès et permissions</li>
+                        <li>Historique et versioning des documents créés pour assurer la traçabilité</li>
+                        <li>API REST développée avec Node.js pour gérer les données et la logique métier</li>
+                    </ul>
+                </div>
+
+                <div class="project-detail-section">
+                    <h2>Technologies utilisées</h2>
+                    <p>
+                        Le frontend de l'application est développé avec <strong>Vue.js</strong>, un framework JavaScript progressif 
+                        qui permet de créer des interfaces utilisateur réactives et performantes. <strong>TypeScript</strong> est utilisé 
+                        pour apporter un typage fort et améliorer la maintenabilité du code.
+                    </p>
+                    <p>
+                        Le backend repose sur <strong>Node.js</strong>, offrant une architecture légère et scalable. L'API REST gère 
+                        l'authentification, la validation des données, et la génération des documents. Une base de données relationnelle 
+                        stocke les informations des produits, utilisateurs et documents générés.
+                    </p>
+                </div>
+
+                <div class="project-detail-section">
+                    <h2>Compétences développées</h2>
+                    <ul class="feature-list">
+                        <li><strong>Développement Full-Stack :</strong> Conception et réalisation complète d'une application web avec frontend Vue.js et backend Node.js, gérant l'ensemble du cycle de vie du projet de A à Z</li>
+                        <li><strong>Architecture API REST :</strong> Conception d'une API RESTful structurée et documentée, avec gestion de l'authentification JWT, validation des données et versioning pour assurer l'évolutivité</li>
+                        <li><strong>Framework Vue.js :</strong> Maîtrise de Vue.js (Composition API, Vuex pour la gestion d'état, Vue Router) pour créer une SPA réactive avec composants réutilisables et maintenables</li>
+                        <li><strong>Génération de documents dynamiques :</strong> Implémentation d'un système de templates pour générer des PDF professionnels à partir de données structurées, avec mise en page automatique</li>
+                        <li><strong>Travail en contexte professionnel :</strong> Collaboration avec des utilisateurs finaux pour recueillir les besoins, itérations successives et adaptation aux retours terrain pour livrer une solution adaptée</li>
+                    </ul>
+                </div>
+
+                <div class="project-detail-section">
+                    <h2>Défis rencontrés</h2>
+                    <p>
+                        Le principal défi était de concevoir un système de templates suffisamment flexible pour s'adapter aux multiples 
+                        types de documents nécessaires, tout en restant simple d'utilisation pour les employés. Il fallait trouver le 
+                        bon équilibre entre personnalisation et standardisation.
+                    </p>
+                    <p>
+                        Un autre aspect complexe était la génération de documents PDF de haute qualité avec une mise en page professionnelle. 
+                        L'intégration de bibliothèques de génération de documents et l'optimisation des performances pour des documents 
+                        volumineux ont nécessité un travail approfondi.
+                    </p>
+                </div>
+
+                <div class="project-detail-section">
+                    <h2>Apprentissages</h2>
+                    <p>
+                        Ce projet m'a permis de développer une expertise complète en développement full-stack moderne. J'ai approfondi 
+                        mes compétences en Vue.js et découvert les bonnes pratiques de développement avec ce framework, notamment la 
+                        gestion d'état, les composants réutilisables, et la composition API.
+                    </p>
+                    <p>
+                        Côté backend, j'ai acquis de l'expérience dans la conception d'APIs REST robustes avec Node.js, la gestion 
+                        de l'authentification et des permissions, ainsi que l'optimisation des performances. Le travail en équipe et 
+                        la communication avec les utilisateurs finaux pour comprendre leurs besoins ont également été des aspects 
+                        enrichissants de ce projet professionnel.
+                    </p>
+                </div>
+
+                <div class="project-detail-links">
+                    <a href="../index.html#contact" class="btn-primary">
+                        Me contacter pour plus d'informations
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

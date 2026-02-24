@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Yaël Betton</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -22,7 +22,7 @@
                     <a href="#about" class="nav-link">À propos de moi</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#skills" class="nav-link">Compétences</a>
+                    <a href="#skills" class="nav-link">Langages maîtrisés</a>
                 </li>
                 <li class="nav-item">
                     <a href="#projects" class="nav-link">Projets</a>
@@ -59,7 +59,7 @@
             </div>
             <div class="hero-image">
                 <div class="profile-circle">
-                        <img src="Photo_Cv.png" alt="Photo CV" class="profile-pic">
+                        <img src="images/Photo_Cv.png" alt="Photo CV" class="profile-pic">
                 </div>
             </div>
         </div>
@@ -114,7 +114,7 @@
     <section id="skills" class="skills">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Compétences</h2>
+                <h2 class="section-title">Langages maîtrisés</h2>
                 <div class="section-line"></div>
             </div>
             <div class="skills-grid">
@@ -160,51 +160,42 @@
                 <div class="section-line"></div> 
             </div>
             <div class="projects-grid">
-                <div class="project-card">
+                <a href="pages/project-latice.html" class="project-card">
                     <div class="project-image">
-                        <img src="Latice.jpg" alt="Latice Jeu">
+                        <img src="images/Latice.jpg" alt="Latice Jeu">
                     </div>
                     <div class="project-content">
                         <h3 class="project-title">Latice</h3>
                         <p class="project-description">
                             Chaque joueur place ses tuiles sur un plateau en les associant par couleur ou symbole à celles déjà posées. Le but est de se débarrasser de toutes ses tuiles le premier,
-                            en utilisant stratégie et anticipation. Des bonus viennent modifier la partie et permettent d'enchaîner des coups ou de bloquer l'adversaire.
+                            en utilisant stratégie et anticipation.
                         </p>
                         <div class="project-tech">
                             <span>Java</span>
                             <span>JavaFX</span>
                         </div>
-                        <div class="project-links">
-                            <a href="https://github.com/YaelBetton/Latice/tree/main/src" class="project-link">Voir le code</a>
-                            <a href="https://github.com/YaelBetton/Latice/blob/main/README.md" class="project-link">Voir la descrition du projet</a>
-                        </div>
                     </div>
-                </div>
+                </a>
 
-                <div class="project-card">
+                <a href="pages/project-yuka.html" class="project-card">
                     <div class="project-image">
-                        <img src="LogoYuka.png" alt="Logo Yuka">
+                        <img src="images/LogoYuka.png" alt="Logo Yuka">
                     </div>
                     <div class="project-content">
                         <h3 class="project-title">Yuka Clone</h3>
                         <p class="project-description">
-                            En scannant le code-barres d'un produit, Yuka fournit une note de qualité basée sur la composition (valeurs nutritionnelles, additifs, ingrédients). 
-                            L'application propose aussi des alternatives plus saines pour aider l'utilisateur à faire de meilleurs choix au quotidien.
+                            En scannant le code-barres d'un produit, Yuka fournit une note de qualité basée sur la composition (valeurs nutritionnelles, additifs, ingrédients).
                         </p>
                         <div class="project-tech">
                             <span>React Native</span>
                             <span>TypeScript</span>
                         </div>
-                        <div class="project-links">
-                            <a href="https://github.com/YaelBetton/Yuka-android-clone" class="project-link">Voir le code</a>
-                            <a href="https://github.com/YaelBetton/Yuka-android-clone/blob/main/README.md" class="project-link">Voir la description du projet</a>
-                        </div>
                     </div>
-                </div>
+                </a>
 
-                <div class="project-card">
+                <a href="pages/project-legrand.html" class="project-card">
                     <div class="project-image">
-                        <img src="Logo_Legrand.png" alt="LeGrand logo">
+                        <img src="images/Logo_Legrand.png" alt="LeGrand logo">
                     </div>
                     <div class="project-content">
                         <h3 class="project-title">LeGrand</h3>
@@ -218,11 +209,11 @@
                             <span>TypeScript</span>
                         </div>
                     </div>
-                </div>
+                </a>
 
-                <div class="project-card">
+                <a href="pages/project-minijeux.html" class="project-card">
                     <div class="project-image">
-                        <img src="minijeuImage.jpg" alt="MiniJeu image">
+                        <img src="images/minijeuImage.jpg" alt="MiniJeu image">
                     </div>
                     <div class="project-content">
                         <h3 class="project-title">MiniJeux</h3>
@@ -234,12 +225,8 @@
                             <span>Python</span>
                             <span>JSON</span>
                         </div>
-                        <div class="project-links">
-                            <a href="https://github.com/YaelBetton/MiniGames/tree/main/MiniGame" class="project-link">Voir le code</a>
-                            <a href="https://github.com/YaelBetton/MiniGames/blob/main/README.md" class="project-link">Voir la description du projet</a>
-                        </div>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
     </section>
@@ -290,6 +277,6 @@
         </div>
     </section>
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
